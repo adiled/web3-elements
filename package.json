@@ -1,0 +1,30 @@
+{
+  "name": "web3-elements",
+  "version": "0.0.0",
+  "description": "Primitive web UI elements for Web3 dApps",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "rimraf build",
+    "build": "tsc --build",
+    "build:check": "node -e \"require('./dist')\""
+  },
+  "keywords": [
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adiled/web3-elements"
+  },
+  "author": "Adil Shaikh <hello@adils.me> (http://www.adils.me)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adiled/web3-elements/issues"
+  },
+  "homepage": "https://github.com/adiled/web3-elements#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "web3-elements",
   "version": "0.0.0",
   "description": "Primitive web UI elements for Web3 dApps",
@@ -11,8 +12,7 @@
     "build": "tsc --build",
     "build:check": "node -e \"require('./dist')\""
   },
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adiled/web3-elements"
@@ -23,8 +23,9 @@
     "url": "https://github.com/adiled/web3-elements/issues"
   },
   "homepage": "https://github.com/adiled/web3-elements#readme",
-  "devDependencies": {
-  },
-  "dependencies": {
-  }
+  "dependencies": {},
+  "devDependencies": {},
+  "workspaces": [
+    "packages/*"
+  ]
 }

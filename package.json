@@ -24,7 +24,10 @@
   },
   "homepage": "https://github.com/adiled/web3-elements#readme",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "typescript": "^4.6.3"
+  },
   "workspaces": [
     "packages/*"
   ]

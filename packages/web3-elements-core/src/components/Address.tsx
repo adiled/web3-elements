@@ -1,7 +1,17 @@
 import { customElement } from "solid-element";
 
+import { Protocol } from '../constants';
+
+export interface IOptions {
+    protocol: Protocol,
+    chainid: string,
+    value: string
+}
+
 const style = `
     div {
+        font-family: "inherit";
+        cursor: pointer;
     }
 `;
 
@@ -11,17 +21,12 @@ const style = `
 
 customElement(
     "w3-address",
-    {
-        protocol: '',
-        chain: '',
-        value: ''
-    },
+    { protocol: Protocol.Other, chainid: '', value: '' } as IOptions,
     (props, { element }) => {
         return (
             <div>
-                Address
                 <style>{style}</style>
-                <span>{props.value}</span>
+                <span>{props.protocol}</span>&emsp;<span>{props.value}</span>
             </div>
         );
     });

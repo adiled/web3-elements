@@ -13,3 +13,34 @@ Primitive core and composite elements serve just like expansive DOM elements of 
 ## Structure
 
 `web3-elements` is a scoped monorepo packaging: primitive elements as web components compiled with SolidJS, while wrapped and higher order components built in react and vue.
+
+## Elements: early ideas
+
+### Core
+
+- Address field and display (user and contract support)
+
+### Wallet-Network Handling
+
+- Wallet provider multi-select
+- Address / Network Switcher
+
+### Transactions
+
+- Bridges
+- Swaps
+- Transfers
+
+## Thoughts on metadata
+
+Elements are to binded with data, arbitrary at times, making certain manifests a dependency. If this wasn't a reality of building frontends for web3, `web3-elements` wouldn't have been a challenge at all.
+
+A relevant overview blog: https://www.thinktecture.com/en/web-components/dependency-injection/
+
+About the data to be injected, an intuitive workflow would be to model the types, then compile data from various sources, transform, hydrate static manifests, then publish in the repo, as well as distribute across decentralized storage options.
+
+The manifests can be anywhere from very-slow to slow-changing.
+
+## Need for a mental framework to model primitives
+
+The purpose of primitives is to house the minimum of traits and qualities, to be consumed by reactive components, that provide styling, and data. Understanding the DX with existing libraries is crucial.
